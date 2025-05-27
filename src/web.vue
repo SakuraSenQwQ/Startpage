@@ -97,7 +97,7 @@ export default {
           <div id="text">
             <div class="tit">
               <div class="webimg">
-                <img :src="website.url + '/favicon.ico'" onerror="this.src='/src/internet.svg'" />
+                <img :src="website.url + '/favicon.ico'" onerror="this.src='/so/internet.svg'" />
               </div>
               <a id="t">{{ website.web }}</a>
             </div>
@@ -108,7 +108,7 @@ export default {
     </div>
     <div>
       <button @click="more()" class="button none" id="more">
-        <img src="/src/more.svg" />
+        <img src="/so/more.svg" />
       </button>
     </div>
   </div>
