@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/startpage',
+  base: '/startpage/',
   server: {
     host: '0.0.0.0',
   },
