@@ -1,22 +1,13 @@
-name: Deploy
+name: Build Vue
 on: [push]
 jobs:
-  deploy:
+  build_vue:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  
+    name: Build Vue
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Vue App to Github Pages
+        uses: StruggleYang/VuePagesAction@2.0.0
         with:
-          persist-credentials: false  
-          
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        
-      - run: npm install && npm run build
-        
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        with:
-          branch: main
-          folder: dist
+          useyarn: true # if project is npm build ,set false
