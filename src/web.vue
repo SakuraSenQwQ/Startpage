@@ -97,7 +97,7 @@ export default {
           <div id="text">
             <div class="tit">
               <div class="webimg">
-                <img :src="website.url + '/favicon.ico'" onerror="this.src='/internet.svg'" />
+                <img :src="website.url + '/favicon.ico'" onerror="this.src='./internet.svg'" />
               </div>
               <a id="t">{{ website.web }}</a>
             </div>
