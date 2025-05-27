@@ -185,7 +185,7 @@ export default {
   </div>
   <div class="infos" :style="classes">
     <div class="stt">
-      <a href="/">Github</a>
+      <a href="https://github.com/SakuraSenQwQ/startpage">Github</a>
       <a href="setting.html">设置</a>
     </div>
     <p class="ba">
